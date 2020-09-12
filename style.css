@@ -28,11 +28,18 @@ body {
 }
 
 .main-case {
-    background-image: url('./pictures/proof-case-background.jpg');
-    height: 1000px;
+    background-image: url(./pictures/proof-case-background.jpg);
+    height: 100%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+@media (max-width: 500px) {
+    .main-case {
+        background-image: url(./pictures/proof-case-background-mobile.jpg);
+    }
 }
 
 .description-container {
@@ -81,7 +88,6 @@ body {
 
 .trio-img {
     flex: 1;
-    object-fit: contain;
     width: 100%;
 }
 
@@ -200,3 +206,9 @@ span {
     padding-top: 250px;
     font-size: 15px;
 }
+
+@media screen and (max-width: 999px){
+    #mep_0 {
+        display: block;
+      }
+    }
