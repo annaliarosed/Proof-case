@@ -27,19 +27,19 @@ body {
     height: 300px;
 }
 
+@media (max-width: 850px) {
+    #proof-case-logo {
+        width: 150px;
+        height: 150px;
+    }
+}
+
 .main-case {
     background-image: url(./pictures/proof-case-background.jpg);
-    height: 100%;
+    height: 1000px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    overflow: hidden;
-}
-
-@media (max-width: 500px) {
-    .main-case {
-        background-image: url(./pictures/proof-case-background-mobile.jpg);
-    }
 }
 
 .description-container {
@@ -141,11 +141,16 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    outline: none;
+    cursor: pointer;
 }
 
-span {
-    border-right: 2px solid #f3713f;
+.order-button-link {
+    text-decoration: none;
+    color: #191e2e;
+    cursor: pointer;
 }
+
 
 .footer-container {
     width: 100%;
